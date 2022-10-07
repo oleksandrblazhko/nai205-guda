@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-04T15:21:01.798Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="S_UFVCFOvQXekzvnfNAi" version="20.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-07T09:06:56.494Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="myh716P0NSniboQTwY4X" version="20.4.0" type="github">
   <diagram id="FiDt0s2Z3zEnG-Hj3zlf" name="Страница 1">
-    <mxGraphModel dx="1019" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+    <mxGraphModel dx="1278" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -28,17 +28,14 @@
         <mxCell id="qLWZHR_6ugfc2XxDYZzj-23" value="назва" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qLWZHR_6ugfc2XxDYZzj-22" vertex="1">
           <mxGeometry y="26" width="140" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="qLWZHR_6ugfc2XxDYZzj-26" value="Додаток" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="65" y="396" width="140" height="104" as="geometry" />
+        <mxCell id="qLWZHR_6ugfc2XxDYZzj-26" value="Онлайн-плеєр" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=14;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="65" y="396" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="qLWZHR_6ugfc2XxDYZzj-27" value="Назва" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qLWZHR_6ugfc2XxDYZzj-26" vertex="1">
-          <mxGeometry y="26" width="140" height="26" as="geometry" />
+          <mxGeometry y="14" width="140" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qLWZHR_6ugfc2XxDYZzj-28" value="Тип" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qLWZHR_6ugfc2XxDYZzj-26" vertex="1">
-          <mxGeometry y="52" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="qLWZHR_6ugfc2XxDYZzj-29" value="Розмір" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qLWZHR_6ugfc2XxDYZzj-26" vertex="1">
-          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        <mxCell id="qLWZHR_6ugfc2XxDYZzj-28" value="Посилання" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qLWZHR_6ugfc2XxDYZzj-26" vertex="1">
+          <mxGeometry y="34" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="qLWZHR_6ugfc2XxDYZzj-30" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=-0.003;exitY=0.045;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="qLWZHR_6ugfc2XxDYZzj-23" target="qLWZHR_6ugfc2XxDYZzj-26" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
