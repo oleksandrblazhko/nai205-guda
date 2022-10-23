@@ -1,1 +1,81 @@
+@startuml
+title Relation Schema
+hide circle
 
+entity user {
+  (PK)id_user
+  --
+  nick
+  phone
+  age
+
+}
+
+
+
+entity online_pleer {
+  (PK)id_online_pleer
+  --
+  name
+  link
+ (FK) id_user
+}
+
+entity song {
+  (PK)id_song
+  --
+  name
+  year
+  song_duration
+}
+
+entity song_category {
+  (PK)id_song_category
+  --
+ name
+
+  (FK)id_online_pleer
+}
+
+entity psychological_and_emotional_state {
+  (PK)id_psychological_and_emotional_state
+  --
+  emotion
+  emotion_during
+  emotion_type
+  
+(FK)id_song_category
+(FK)id_user
+}
+
+entity user_song {
+  (PK)id_user
+  (PK)id_song
+}
+
+ entity user_song_category {
+  (PK)id_user
+  (PK)id_song_category
+}
+
+entity song_song_category {
+  (PK)id_song
+  (PK)id_song_category
+}
+
+user --{ user_song
+song --{ user_song
+
+user --{ user_song_category
+song_category --{ user_song_category 
+
+song --{ song_song_category
+song_category --{ song_song_category
+
+online_pleer --{ user
+
+user --{ psychological_and_emotional_state
+song_category --{ psychological_and_emotional_state
+online_pleer --{ song_category
+
+@enduml
