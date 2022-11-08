@@ -8,6 +8,11 @@ age int
 ) NOT FINAL 
 /
 
+/* Створення типу для зберігання списку користувачів - "Колекція екземплярів об`єктів класу user */
+CREATE TYPE user_List IS TABLE OF user;
+/
+
+
 
 /* Cтворення об'єктного типу (класу) psychological_and_emotional_state , що успадковує об'єктний тип user */
 CREATE OR REPLACE TYPE psychological_and_emotional_state UNDER user and song_category (
