@@ -1,6 +1,6 @@
 /* Створення об'єктного типу (класу) user */
 CREATE OR REPLACE TYPE user AS OBJECT (
-	id_user SERIAL PRIMARY KEY,
+	id_user INT,
 nick varchar,
 phone int,
 age int
@@ -16,7 +16,7 @@ CREATE TYPE user_List IS TABLE OF user;
 
 /* Cтворення об'єктного типу (класу) psychological_and_emotional_state , що успадковує об'єктний тип user */
 CREATE OR REPLACE TYPE psychological_and_emotional_state UNDER user and song_category (
-	id_psychological_and_emotional_state SERIAL PRIMARY KEY,
+	id_psychological_and_emotional_state int,
 emotion varchar,
 emotion_duration int,
 emotion_type nchar(50)
@@ -28,7 +28,7 @@ emotion_type nchar(50)
 
 /* Створення об'єктного типу (класу) online_pleer */
 CREATE OR REPLACE TYPE online_pleer AS OBJECT (
-	id_online_pleer SERIAL PRIMARY KEY,
+	id_online_pleer int,
 name varchar,
 link varchar
     	MEMBER PROCEDURE display
@@ -38,14 +38,14 @@ link varchar
 
 /* Створення об'єктного типу (класу) song_category */
 CREATE OR REPLACE TYPE song_category AS OBJECT (
-	id_song_category SERIAL PRIMARY KEY,
+	id_song_category int,
 name varchar
 );
 /
 
 /* Створення об'єктного типу (класу) song, що успадковує, об'єктний тип song_category */
 CREATE OR REPLACE TYPE song  UNDER song_category (
-	id_song SERIAL PRIMARY KEY,
+	id_song int,
 name nchar(50),
 year int,
 song_duration float
