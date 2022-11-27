@@ -44,7 +44,7 @@ class TestCasesModified {
             cstmt1.setString(2,"sadness..................більше 2000 символів");
             cstmt1.setString(3,"snowflake");
             cstmt1.executeUpdate();
-            System.out.print("TC4: change_state('текст повідомлення','+38062asdg525') очікуваний результат -1, результат:" + cstmt1.getInt(1));
+            System.out.print("TC4: change_state('sadness..................більше 2000 символів','snowflake') очікуваний результат -1, результат:" + cstmt1.getInt(1));
             if(cstmt1.getInt(1) == -1) System.out.println("Passed");
             else{System.out.println("Failed");
                 testcaseResult = -1;}
